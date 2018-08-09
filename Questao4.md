@@ -1,0 +1,3 @@
+<h3>Deadlock<h3>
+
+Deadlock é um impasse na liberação de recursos alocados por processos, onde a liberação do recurso de um dos processos depende MUTUAMENTE da liberação do recurso do outro processo; nesse caso, forma-se um bloqueio na liberação e alocação dos recursos, pois não é possível impor a um dos processos que  deliberadamente deixe de "prender" o recurso em sua posse para que o outro possa alocá-lo. É um problema complicado de resolver, principalmente porque recursos são finitos: por exemplo, deadlocks são comuns em bancos de dados, principalmente quando há processos que bloqueiam tabelas; nesse caso em específico, deve-se evitar ao máximo usar o bloqueio de tabelas, para não correr o risco de haver "disputa" por tabelas bloqueadas entre processos.

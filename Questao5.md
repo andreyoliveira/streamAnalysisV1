@@ -1,0 +1,3 @@
+<h3>Stream vs Parallel Stream</h3>
+
+A diferença da execução do método sequential() da classe Stream, para o método parallel() da mesma classe, é que, utilizando-se o segundo método, vc pode ter, por exemplo, execuções de Threads que dependam dos dados da Stream de uma forma paralela, ou seja, várias threads são iniciadas para a execução da ação. No caso do primeiro método, a ação será feita de modo serial, ou seja, cada ação será executada por vez, por apenas uma thread. Citando um exemplo, em ações utilizando coleções, onde a ordem dos dados influencia o resultado final, deve ser utilizado o modo sequencial; se a ordem não for primordial na execução da ação, pode-se usar o modo paralelo, para que mais de uma Thread seja iniciada, e a ação ocorra com maior rapidez.
